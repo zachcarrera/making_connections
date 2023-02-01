@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+/* general text styling for the whole page */
+a {
+    color: #0a5394;
+}
+h3 {
+    font-weight: 500;
+}
+h4 {
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+/* nav bar styling */
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 1rem 8.5%;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    flex: 4;
+}
+
+.navbar li:last-child {
+    margin: 0 0 0 auto;
+}
+.nav-title,
+.navbar a:hover,
+.btn {
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    background-color: #17a2b8;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 0.25em 0.5em;
+}
+
+.nav-title {
+    font-weight: 400;
+    flex: 1;
+}
+
+/* main content container styling */
+.container {
+    padding: 1rem 8.5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* left column */
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blue-header {
+    background-color: #17a2b8;
+}
+
+.image-and-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile {
+    height: 6em;
+    position: relative;
+    top: 3em;
+    left: 3em;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 3px solid #cccccc;
+    border-top: 0;
+}
+
+.bio {
+    padding: 1rem;
+    border: 3px solid #cccccc;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inline {
+    height: 1em;
+    vertical-align: center;
+}
+
+/* black header styling */
+.content-header {
+    background-color: #333333;
+    color: white;
+    padding: 0.8em 1em;
+}
+.content-header span {
+    background-color: #cccccc;
+    color: black;
+    border-radius: 50%;
+    padding: 0.3em;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+/* right column */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.requests span {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.people {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5rem;
+    border: 3px solid #cccccc;
+    border-top: none;
+}
+
+.people li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.people img {
+    border-radius: 50%;
+    height: 1.5em;
+}
+
+/* margin auto rule to push the accept and decline buttons to the right */
+.people li img:nth-of-type(2) {
+    margin: 0 0 0 auto;
+}
+
+.more-connections {
+    border: 3px solid #cccccc;
+    border-top: none;
+    padding: 0.5rem;
+}

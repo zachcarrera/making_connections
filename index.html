@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <!-- nav bar section -->
+    <nav class="navbar">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>
+    </nav>
+
+    <!-- main content container -->
+    <main class="container">
+        <!-- left column -->
+        <div class="content">
+
+            <!-- main user section -->
+            <section class="user-card">
+                <header class="blue-header">
+                    <img src="/images/zach-2.jpg" alt="user profile picture" class="profile">
+                </header>
+                <div class="info">
+                    <h1>John Doe</h1>
+                    <div class="image-and-text">
+                        <img src="/icons/map-marker.png" alt="map marker" class="inline">
+                        San Francisco
+                    </div>
+                    <p>
+                        Developer | Engineer | Problem Solver <br>
+                        Master of Shadows and the Internet!
+                    </p>
+                    <div class="image-and-text">
+                        <img src="/icons/gear.png" alt="gear icon" class="inline"><a href="#"
+                            onclick="changeName(this)">edit profile</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- education section -->
+            <section class="edu">
+                <header class="content-header">
+                    <h2>Education</h2>
+                </header>
+                <div class="bio">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <h4>Dec 2019 - Mar 2020</h4>
+                    <p>
+                        Triple black belt in Python, MERN, and C#...
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quaerat debitis harum sapiente facilis sit
+                        incidunt at, vitae nulla delectus excepturi
+                        exercitationem architecto dolorem officia deserunt
+                        eos repellat ab sed iure? Nemo ullam accusantium
+                        dignissimos fugit eius aut quo nam. Sint obcaecati
+                        rem laboriosam iste quos tenetur soluta, aut esse,
+                        nostrum ab numquam eligendi atque blanditiis
+                        explicabo dignissimos quas incidunt impedit!
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- right column -->
+        <aside class="sidebar">
+            <!-- connection requests  -->
+            <section class="requests">
+                <header class="content-header">
+                    <h2><span>2</span>Connection Requests</h2>
+                </header>
+                <ul class="people">
+                    <li>
+                        <img src="/images/todd-s.jpg" alt="todds's picture">
+                        Todd E
+                        <img src="/icons/accept-circle.png" alt="accept circle" onclick="connectionClick(this)"
+                            class="accept">
+                        <img src="/icons/close-circle.png" alt="close circle" onclick="connectionClick(this)"
+                            class="decline">
+                    </li>
+                    <li>
+                        <img src="/images/phil-s.jpg" alt="phil's picture">
+                        Phil K
+                        <img src="/icons/accept-circle.png" alt="accept circle" onclick="connectionClick(this)"
+                            class="accept">
+                        <img src="/icons/close-circle.png" alt="close circle" onclick="connectionClick(this)"
+                            class="decline">
+                    </li>
+                </ul>
+            </section>
+
+            <!-- your connections -->
+            <section class="connections">
+                <header class="content-header">
+                    <h2><span>500</span>Your Connections</h2>
+                </header>
+                <ul class="people">
+                    <li>
+                        <img src="/images/adrien-s.jpg" alt="adrien's picture">
+                        Adrien D
+                    </li>
+                    <li>
+                        <img src="/images/anne-s.jpg" alt="anne's picture">
+                        Anne J
+                    </li>
+                    <li>
+                        <img src="/images/alayne-s.jpg" alt="alayne's picture">Alayne T
+                    </li>
+                    <li>
+                        <img src="/images/arry-s.jpg" alt="arry's picture">
+                        Arry Y
+                    </li>
+                </ul>
+                <footer class="more-connections">
+                    <a href="#">View More</a>
+                </footer>
+            </section>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
